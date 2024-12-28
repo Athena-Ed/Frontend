@@ -20,9 +20,9 @@ const Homepage = () => {
                     </div>
                 </div>
 
-                <div className="hero-image">
+                {/* <div className="hero-image">
                     <img src="/images/hero-illustration.svg" alt="background image insert" />
-                </div>
+                </div> */}
             </section>
 
         </main>
