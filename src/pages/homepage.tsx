@@ -1,5 +1,6 @@
 import Navbar from '../components/navbar';
 import '../styles/homepage.css';
+import kfc from '../assets/kfc.webp'
 
 const Homepage = () => {
     return (
@@ -20,9 +21,9 @@ const Homepage = () => {
                     </div>
                 </div>
 
-                {/* <div className="hero-image">
-                    <img src="/images/hero-illustration.svg" alt="background image insert" />
-                </div> */}
+                <div className="hero-image">
+                    <img src={kfc} alt="background image insert" />
+                </div>
             </section>
 
         </main>
