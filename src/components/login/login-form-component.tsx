@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { ArrowLeft } from 'react-feather';
 
+import '../../styles/login-form-component.css'
+
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
