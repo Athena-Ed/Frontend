@@ -1,6 +1,8 @@
 import Navbar from '../components/navbar';
-import '../styles/homepage.css';
+
 import kfc from '../assets/kfc.webp'
+
+import '../styles/homepage.css';
 
 const Homepage = () => {
     return (
@@ -31,4 +33,3 @@ const Homepage = () => {
 };
 
 export default Homepage;
-
