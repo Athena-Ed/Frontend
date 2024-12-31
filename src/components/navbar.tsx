@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="nav-container">
-                <Link to="/" className="logo">
+                <Link to="/frontend.github.io/" className="logo">
                 athena
                 </Link>
 
