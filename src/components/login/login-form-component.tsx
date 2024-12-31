@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft } from 'react-feather';
+import { Link } from 'react-router-dom';
 
 import '../../styles/login-form-component.css'
 
@@ -55,7 +56,7 @@ const Login = () => {
 
                 <div className="additional-options">
                     <a href="/forgot-password">Forgot password?</a>
-                    <p>Don't have an account? <a href="/sign-up">Sign up</a></p>
+                    <p>Don't have an account? <Link to="/frontend.github.io/sign-up">Sign up</Link></p>
                 </div>
 
             </div>
