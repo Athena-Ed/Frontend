@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 import '../../styles/signup-form-component.css'
 
 const SignUp = () => {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -16,7 +14,7 @@ const SignUp = () => {
 
         // SIGN UP LOGIC HERE
         
-        console.log("Sign up attempted with:", { firstName, lastName, email, password, confirmPassword });
+        console.log("Sign up attempted with:", { email, password, confirmPassword });
     };
 
     return (
@@ -29,30 +27,6 @@ const SignUp = () => {
                 <h1>Create your athena account</h1>
 
                 <form onSubmit={handleSubmit}>
-                    <div className="form-row">
-                        <div className="form-group">
-                        <label htmlFor="firstName">First Name</label>
-                        <input
-                            type="text"
-                            id="firstName"
-                            value={firstName}
-                            onChange={(e) => setFirstName(e.target.value)}
-                            required
-                        />
-                        </div>
-
-                        <div className="form-group">
-                        <label htmlFor="lastName">Last Name</label>
-                        <input
-                            type="text"
-                            id="lastName"
-                            value={lastName}
-                            onChange={(e) => setLastName(e.target.value)}
-                            required
-                        />
-                        </div>
-                    </div>
-
                     <div className="form-group">
                         <label htmlFor="email">Email</label>
                         <input
